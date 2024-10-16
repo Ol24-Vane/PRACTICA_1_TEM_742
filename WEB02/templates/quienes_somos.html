@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes_Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+ body {
+          font-family: 'Roboto', sans-serif;
+      }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes_somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Acerca de la Cafeteria Chipp</p>  
+    </main>
+
+    <div class="bg-white">
+        <div class="text-center py-10">
+        <h1 class="text-4xl font-bold text-gray-200">
+            HISTORIA DE LA CAFETERíA CHIPP
+        </h1>
+        <h2 class="text-3xl font-bold text-black-900 mt-2">
+            HISTORIA DE LA CAFETERíA CHIPP
+        </h2>
+            <div class="w-16 h-1 bg-orange-900 mx-auto mt-2">
+            </div>
+    </div>
+    <p> Su historia comenzó un 28 de febrero del 2012, cuando un grupo de amigos, apasionados por el café y la buena compañía,
+         decidió abrir un lugar donde todos pudieran disfrutar de una taza caliente y deliciosos postres.
+         La idea nació en una conversación animada entre ellos, mientras disfrutaban de un café en la casa de uno de ellos. 
+         "¿Por qué no creamos nuestro propio espacio?", sugirió Anabel, la más entusiasta del grupo. Todos estuvieron de acuerdo, 
+         y así comenzaron a planear su sueño.
+    </p>
+    <p>Después de meses de trabajo duro, encontraron un pequeño local con grandes ventanales que dejaban entrar la luz del sol. 
+        Pintaron las paredes con colores cálidos y decoraron el lugar con fotos de sus viajes y recuerdos compartidos. El 28 de 
+        febrero finalmente llegó, y con él la gran inauguración. Invitaron a amigos y familiares para celebrar ese nuevo comienzo.
+        La cafetería Chipp se volvió rápidamente un punto de encuentro en el barrio. Cada mañana, el aroma del café recién hecho 
+        llenaba el aire, atrayendo a los transeúntes. Las mesas siempre estaban llenas de risas y conversaciones animadas. Los 
+        clientes se sentían como en casa, y muchos regresaban a diario para disfrutar no solo del café, sino también del ambiente 
+        acogedor. <br>
+        Con el tiempo, Chipp empezó a ofrecer eventos como noches de poesía y música en vivo, lo que atrajo a más personas y creó 
+        una comunidad vibrante. La pasión por el café se transformó en una experiencia única donde cada cliente se sentía especial.
+    </p>
+    <div style="text-align: center;">
+        <img src="/static/imagenes/lugar.png" alt="lugar" height="400" width="500">
+    </div>
+        <br>
+    <h2 class="text-3xl font-bold text-black-900 mt-2">NUESTRA MISIÓN</h2>
+    <p>En Chipp, nuestra misión es ofrecer una experiencia única y acogedora a cada uno de nuestros clientes, sirviendo café de alta 
+        calidad y deliciosos postres en un ambiente cálido y amigable. Nos comprometemos a crear un espacio donde las personas puedan 
+        reunirse, compartir momentos especiales y disfrutar de la buena compañía, mientras apoyamos a productores locales y fomentamos 
+        un sentido de comunidad.
+    </p>
+        <br>
+    <h2 class="text-3xl font-bold text-black-900 mt-2">NUESTRA VISIÓN</h2>
+    <p>Nuestra visión es ser reconocidos como el corazón del barrio, un lugar donde cada visita se convierte en una experiencia memorable. 
+        Aspiramos a expandir nuestra oferta, introduciendo eventos culturales y colaboraciones con artistas locales, convirtiéndonos en un 
+        punto de referencia para quienes buscan no solo un buen café, sino también un espacio para conectar, inspirarse y celebrar la vida. 
+        Queremos que Chipp sea sinónimo de calidad, creatividad y comunidad en cada taza que servimos.
+    </p>
+        <br>
+    <div class="bg-white">
+        <div class="text-center py-10">
+        <h1 class="text-4xl font-bold text-gray-200">
+            NUESTRO EQUIPO 
+        </h1>
+        <h2 class="text-3xl font-bold text-black-900 mt-2">
+            NUESTRO EQUIPO
+        </h2>
+            <div class="w-16 h-1 bg-orange-900 mx-auto mt-2">
+            </div>
+    </div>
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Warehouse storage with boxes and a forklift" class="w-full h-48 object-cover" src="/static/imagenes/chefs.png"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                     CHEFS
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Se encarga de preparar alimentos, como sándwiches, ensaladas y productos horneados, asegurando que todo esté fresco y delicioso.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Logistics with containers and cranes at a port" class="w-full h-48 object-cover" src="/static/imagenes/baristas-preparando-cafe.png"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                    BARISTAS
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Responsable de preparar y servir café y otras bebidas. Debe tener habilidades en el manejo de la máquina de café y conocimientos 
+                        sobre diferentes tipos de café.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Cargo containers stacked at a port" class="w-full h-48 object-cover" src="/static/imagenes/cajero.png"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                    CAJEROS 
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Maneja el sistema de punto de venta, toma pedidos y gestiona los pagos. Debe ser amable y eficiente en el servicio al cliente.     
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>© 2024 Mi Cafeteria Chipp - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

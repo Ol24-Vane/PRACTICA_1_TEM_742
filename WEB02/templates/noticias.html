@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+     body {
+              font-family: 'Roboto', sans-serif;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes_somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <p>Tu mejor opción Cafetería Chipp</p>  
+    </main>
+    <div class="bg-white">
+        <div class="text-center py-10">
+        <h1 class="text-4xl font-bold text-gray-200">
+        ÚLTIMAS NOTICIAS
+        </h1>
+        <h2 class="text-3xl font-bold text-black-900 mt-2">
+        ÚLTIMAS NOTICIAS
+        </h2>
+            <div class="w-16 h-1 bg-orange-900 mx-auto mt-2">
+            </div>
+    </div>
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Warehouse storage with boxes and a forklift" class="w-full h-48 object-cover" src="/static/imagenes/variedades-del-cafe.jpg"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                    ¡NUEVA VARIEDAD DE CAFÉ!
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Nos complace anunciar la llegada de una nueva variedad de café de Colombia. ¡Ven a probarla!
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Logistics with containers and cranes at a port" class="w-full h-48 object-cover" src="/static/imagenes/catadecafe.png"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                    EVENTO ESPECIAL: CATA DE CAFÉ
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Este fin de semana organizamos una cata especial para nuestros clientes. ¡Reserva tu lugar ahora!
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img alt="Cargo containers stacked at a port" class="w-full h-48 object-cover" src="/static/imagenes/bebidas.png"/>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-black-900">
+                    INNOVACIÓN EN BEBIDAS 
+                    </h3>
+                    <p class="text-gray-700 mt-2">
+                        Se están viendo nuevas tendencias en la preparación de bebidas, como el café nitro o las infusiones frías. Estas opciones están ganando popularidad entre quienes buscan algo diferente.      
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('contactos') }}">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <footer>
+        <p>© 2024 Mi Cafeteria Chipp - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
